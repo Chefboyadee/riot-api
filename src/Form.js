@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import Apicalls from './Apicalls.js'
 function Form(){
     const [inputs, setInputs] = useState({});
     //const [name, setName] = useState("");
@@ -43,7 +43,8 @@ function Form(){
             />
             <input type="submit"/>
         </form>
-  
+        
+        <Apicalls inputs = {inputs} />
       </>
     )
   }
